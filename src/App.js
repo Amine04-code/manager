@@ -7,11 +7,11 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 
 // Optional future routes:
-// import Team from "./scenes/team";
-// import Invoices from "./scenes/invoices";
-// import Contacts from "./scenes/contacts";
+import Team from "./scenes/team";
+import Invoices from "./scenes/invoices";
+import Contacts from "./scenes/contacts";
 // import Bar from "./scenes/bar";
-// import Form from "./scenes/form";
+import Form from "./scenes/form";
 // import Line from "./scenes/line";
 // import Pie from "./scenes/pie";
 // import FAQ from "./scenes/faq";
@@ -32,10 +32,10 @@ function App() {
         <Topbar setIsSidebar={setIsSidebar} />
           <Routes>
           <Route path="/" element={<Dashboard/>} />
-          {/*<Route path="/team" element={<team/>} />
-          <Route path="/contacts" element={<contacts/>} />
-          <Route path="/invoices" element={<invoices/>} />
-          <Route path="/form" element={<form/>} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/form" element={<Form/>} />
+          {/*<Route path="/invoices" element={<Invoices />} />
           <Route path="/bar" element={<bar/>} />
           <Route path="/line" element={<line/>} />
           <Route path="/pie" element={<pie/>} />
